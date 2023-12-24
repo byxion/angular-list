@@ -1,0 +1,14 @@
+/* user-list.component.css */
+
+mat-table {
+  width: 100%;
+}
+
+mat-cell,
+mat-header-cell {
+  text-align: center;
+}
+
+mat-paginator {
+  margin-top: 20px;
+}

@@ -1,0 +1,12 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: clamp(3rem, 5vw, 5rem);
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+}

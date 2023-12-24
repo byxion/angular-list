@@ -1,0 +1,10 @@
+<div *ngIf="!(userTransmis.name == '')" class="details">
+  <h3>Update Users</h3>
+  <span>First Name : {{userTransmis.name}}</span>
+  <span>Email : {{userTransmis.email}}</span>
+  <span>Occupation : {{userTransmis.occupation}}</span>
+  <span>Bio : {{userTransmis.bio}}</span>
+
+  <button mat-raised-button routerLink="/users">Back to user list</button>
+
+</div>
