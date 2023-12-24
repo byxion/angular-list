@@ -1,26 +1,22 @@
+<!-- add-user.component.html -->
 <div class="container">
-  <h2>Add User</h2>
-  <form [formGroup]="addUserForm" (ngSubmit)="onSubmit()">
-    <div class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" class="form-control" id="name" formControlName="name" required>
-    </div>
-      <div class="form-group">
-          <label for="password">Mots de passe:</label>
-          <input type="password" class="form-control" id="password" formControlName="password" required>
-      </div>
-    <div class="form-group">
-      <label for="occupation">Occupation:</label>
-      <input type="text" class="form-control" id="occupation" formControlName="occupation" required>
-    </div>
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" formControlName="email" required>
-    </div>
-    <div class="form-group">
-      <label for="bio">Bio:</label>
-      <textarea class="form-control" id="bio" formControlName="bio" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary" [disabled]="!addUserForm.valid">Add User</button>
-  </form>
+    <h2>Add User</h2>
+    <form [formGroup]="addUserForm" (ngSubmit)="onSubmit()">
+        <mat-form-field class="form-group">
+            <input matInput placeholder="Name" formControlName="name" required>
+        </mat-form-field>
+        <mat-form-field class="form-group">
+            <input matInput type="password" placeholder="Mots de passe" formControlName="password" required>
+        </mat-form-field>
+        <mat-form-field class="form-group">
+            <input matInput placeholder="Occupation" formControlName="occupation" required>
+        </mat-form-field>
+        <mat-form-field class="form-group">
+            <input matInput type="email" placeholder="Email" formControlName="email" required>
+        </mat-form-field>
+        <mat-form-field class="form-group">
+            <textarea matInput placeholder="Bio" formControlName="bio" required></textarea>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!addUserForm.valid">Add User</button>
+    </form>
 </div>

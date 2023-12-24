@@ -1,26 +1,27 @@
+<!-- user-detail.component.html -->
 <div *ngIf="!(userTransmis.name == '')" class="details">
-  <h3>Users details</h3>
+    <h3>Users details</h3>
 
-  <!-- Do a form do update Name, Email, or Occupation with the button submit -->
-  <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)" class="details">
-    <div class="form-group">
-      <label for="name">Name</label>
-      <input matInput type="text" [(ngModel)]="userTransmis.name" name="name" id="name" required>
-    </div>
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input matInput type="email" [(ngModel)]="userTransmis.email" name="email" id="email" required>
-    </div>
-    <div class="form-group">
-      <label for="occupation">Occupation</label>
-      <input matInput type="text" [(ngModel)]="userTransmis.occupation" name="occupation" id="occupation" required>
-    </div>
-    <div class="form-group">
-      <label for="password">Password</label>
-      <input matInput type="password" [(ngModel)]="userTransmis.password" name="password" id="password" required>
-    </div>
-    <button mat-raised-button type="submit" color="primary">Submit</button>
-  </form>
+    <!-- Do a form do update Name, Email, or Occupation with the button submit -->
+    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)" class="details">
+        <mat-form-field class="form-group">
+            <input matInput type="text" [(ngModel)]="userTransmis.name" name="name" id="name" required>
+            <mat-label>Name</mat-label>
+        </mat-form-field>
+        <mat-form-field class="form-group">
+            <input matInput type="email" [(ngModel)]="userTransmis.email" name="email" id="email" required>
+            <mat-label>Email</mat-label>
+        </mat-form-field>
+        <mat-form-field class="form-group">
+            <input matInput type="text" [(ngModel)]="userTransmis.occupation" name="occupation" id="occupation" required>
+            <mat-label>Occupation</mat-label>
+        </mat-form-field>
+        <mat-form-field class="form-group">
+            <input matInput type="password" [(ngModel)]="userTransmis.password" name="password" id="password" required>
+            <mat-label>Password</mat-label>
+        </mat-form-field>
+        <button mat-raised-button type="submit" color="primary">Submit</button>
+    </form>
 
-  <button mat-raised-button routerLink="/users">Back to user list</button>
+    <button mat-raised-button routerLink="/users">Back to user list</button>
 </div>
