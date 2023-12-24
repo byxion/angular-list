@@ -20,6 +20,7 @@ export class AddUserComponent implements OnInit {
   ) {
     this.addUserForm = this.formBuilder.group({
       name: ['', Validators.required],
+      password: ['', Validators.required],
       occupation: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       bio: ['', Validators.required]
