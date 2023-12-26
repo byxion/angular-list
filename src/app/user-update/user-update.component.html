@@ -1,6 +1,6 @@
 <!-- user-detail.component.html -->
 <div *ngIf="!(userTransmis.name == '')" class="details">
-    <h3>Users details</h3>
+    <h3>Update user</h3>
 
     <!-- Do a form do update Name, Email, or Occupation with the button submit -->
     <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)" class="details">

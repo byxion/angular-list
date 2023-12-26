@@ -14,7 +14,7 @@ import {Router} from "@angular/router";
   styleUrls: ['./user-list.component.css'],
 })
 export class UserListComponent implements OnInit {
-  displayedColumns: string[] = ['nom', 'email', 'occupation', 'actions'];
+  displayedColumns: string[] = ['name', 'email', 'occupation', 'actions'];
   dataSource: MatTableDataSource<User> = new MatTableDataSource();
   filterValue = '';
 

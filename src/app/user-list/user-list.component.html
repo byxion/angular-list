@@ -12,7 +12,7 @@
 <mat-table [dataSource]="dataSource" matSort>
 
   <!-- Nom Column -->
-  <ng-container matColumnDef="nom">
+  <ng-container matColumnDef="name">
     <mat-header-cell *matHeaderCellDef mat-sort-header>Nom</mat-header-cell>
     <mat-cell *matCellDef="let user">{{ user.name }}</mat-cell>
   </ng-container>
@@ -25,7 +25,7 @@
 
   <!-- Occupation Column -->
   <ng-container matColumnDef="occupation">
-    <mat-header-cell *matHeaderCellDef mat-sort-header>Occupation</mat-header-cell>
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Métier</mat-header-cell>
     <mat-cell *matCellDef="let user">{{ user.occupation }}</mat-cell>
   </ng-container>
 
